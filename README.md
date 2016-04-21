@@ -1,4 +1,4 @@
-#Node TescoAPI
+#Tesco NodeJS API
 
 An simple precompiled ES6 Node wrapper to pull data from [Tesco](http://www.tesco.co.uk/) using Promises.
 
