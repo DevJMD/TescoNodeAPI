@@ -15,7 +15,7 @@ Head over to [Tesco Labs Dev Portal](https://devportal.tescolabs.com), sign up a
 
     // Require
     var TescoAPI = require('tesco');
-    var Tesco = new TescoAPI('apikey');
+    var Tesco = new TescoAPI.default('apikey');
 
 ###TescoAPI.search([Query], [Options], [Callback]);
 
