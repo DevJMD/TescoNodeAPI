@@ -1,6 +1,6 @@
 #Tesco NodeJS API
 
-An simple precompiled ES6 Node wrapper to pull data from [Tesco](http://www.tesco.co.uk/) using Promises.
+An simple precompiled ES6 Node wrapper to pull data from the [Tesco](http://www.tesco.co.uk/) API using Promises.
 
 ### Get API key
 Head over to [Tesco Labs Dev Portal](https://devportal.tescolabs.com), sign up and subscribe to the API.

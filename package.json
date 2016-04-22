@@ -1,8 +1,8 @@
 {
   "name": "tesco",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "lib/index.js",
-  "description": "A complimentary Node wrapper for Tesco.",
+  "description": "A complimentary Node wrapper for the public Tesco Supermarket API.",
   "author": "James Martin-Davies <hello@devjmd.com> (https://devjmd.com)",
   "scripts": {
     "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib"
