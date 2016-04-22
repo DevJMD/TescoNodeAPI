@@ -52,7 +52,7 @@ class TescoAPI {
 
 		.then((response) => {
 
-			const products = response.body.uk.ghs.products;
+			const Products = response.body.uk.ghs.products;
 
 			// Build pagination URL's.
 			const Pagination = {};
@@ -62,10 +62,10 @@ class TescoAPI {
 			Pagination.previous = `${URI.protocol}//${URI.host}/?query=${query}&offset=${(props.offset > 0 ? props.offset - 1 : props.offset)}&limit=${props.limit}`;
 
 			// Set Pagination inside response.
-			products.pagination = Pagination;
+			Products.pagination = Pagination;
 
 			// Format that lovely data.
-			res = new ProductSearchFormat(products);
+			res = new ProductSearchFormat(Products);
 		})
 
 		.catch((error)   => err = error)
