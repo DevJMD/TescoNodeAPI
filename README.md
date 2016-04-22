@@ -10,7 +10,7 @@ Head over to [Tesco Labs Dev Portal](https://devportal.tescolabs.com), sign up a
 
 ###Usage (ES5/2016)
 
-    ```javascript
+```javascript
     // ES2016
     import TescoAPI from 'tesco';
     const Tesco = new TescoAPI('apikey');
@@ -18,13 +18,13 @@ Head over to [Tesco Labs Dev Portal](https://devportal.tescolabs.com), sign up a
     // Require
     var TescoAPI = require('tesco');
     var Tesco = new TescoAPI.default('apikey');
-    ```
+```
 
 ###TescoAPI.search([Query], [Options], [Callback]);
 
 You can pass two parameters: `offset` (default: 0) and `limit` (default: 10).
 
-    ```javascript
+```javascript
     // ES2016
     Tesco.search('Kellogs Cornflakes', { offset: 0, limit: 10 }, (err, response) => {
     	if (err) console.log(err);
@@ -36,7 +36,7 @@ You can pass two parameters: `offset` (default: 0) and `limit` (default: 10).
     	if (err) console.log(err);
     	console.log(response);
     });
-    ```
+```
     
 ### Rate limiting
 120 calls/minute up to a maximum of 3000 calls/week.
