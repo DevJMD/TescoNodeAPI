@@ -4,9 +4,7 @@ import ProductSearchFormat from './Helpers/ProductSearchFormat';
 class TescoAPI {
 	constructor(key) {
 
-		if (!key) {
-			throw new Error('You need to provide an API key. Go to https://devportal.tescolabs.com/ and grab one.');
-		}
+		if (!key) throw new Error('You need to provide an API key. Go to https://devportal.tescolabs.com/ and grab one.');
 
 		this.baseURL = 'https://dev.tescolabs.com';
 		this.request = {
@@ -26,9 +24,7 @@ class TescoAPI {
 
 	search(query, props, cb) {
 
-		if (!query) {
-			throw new Error('You must pass a query string parameter.');
-		}
+		if (!query) throw new Error('You must pass a query string parameter.');
 
 		// At this moment in time, the API only accepts a subscription
 		// to the Grocery Product Search API.
