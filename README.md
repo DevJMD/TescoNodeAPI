@@ -19,8 +19,16 @@ Head over to [Tesco Labs Dev Portal](https://devportal.tescolabs.com), sign up a
 
 ###TescoAPI.search([Query], [Options], [Callback]);
 
+You can pass two parameters: `offset` (default: 0) and `limit` (default: 10).
 
-    Tesco.search('Kellogs Cornflakes', { <offset:Number>, <limit:Number> }, (err, response) => {
+    // ES2016
+    Tesco.search('Kellogs Cornflakes', { offset: 0, limit: 10 }, (err, response) => {
+    	if (err) console.log(err);
+    	console.log(response);
+    });
+
+    // ES5
+    Tesco.search('Kellogs Cornflakes', { offset: 0, limit: 10 }, function(err, response) {
     	if (err) console.log(err);
     	console.log(response);
     });
