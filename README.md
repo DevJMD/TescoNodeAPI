@@ -44,7 +44,7 @@ The API is quite small at the moment and is restricted to product searches. As t
 I am open to pull requests/contributions! Fire them away.
 
 ###Issues
-No known issues!
+If there is an issue with the returned results (i.e. broken URL's from the returned data), this is an issue with the API, not the wrapper itself. Head over to Tesco's [Issues List](http://www.tesco.co.uk/) and submit an issue there. 
 
 ###License
 MIT
